@@ -22,7 +22,7 @@ public class player_level {
 
     public int startingLevel = 1;
     public static int playerLevel;
-    public static int playerLevelBoost = (int) (playerLevel * 1.5);
+    public static int playerLevelBoost = (int) Math.round(playerLevel * 1.5);
     public static int playerLevelUp = playerLevel + 1;
 
     public static int[] statLevel; {

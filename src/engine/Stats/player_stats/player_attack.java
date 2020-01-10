@@ -12,8 +12,8 @@ public class player_attack extends player_stat {
     public static int attackLevel;
     public static int filledAttackSlot;
 
-    public static player_attack getPlayerAttack() {
-        return (player_attack) playerAttack;
+    public static int getPlayerAttack() {
+        return playerAttack;
     }
 
     public Object attackSlots; {

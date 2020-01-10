@@ -28,10 +28,13 @@ public class player_attack_move {
     public player_attack_move combinedLightMagicAttack;
 
     //TODO change the int to something else and finish this List
-    public static int[] playerAttackMove; {
-        ArrayList<Integer> playerAttackMoves = new ArrayList<>() {
-
-        };
+    public player_attack_move getPlayerAttackMove(player_attack_move heavyAttack, player_attack_move lightAttack,
+                                                  player_attack_move jumpAttack, player_attack_move combinedLightMagicAttack) {
+        this.heavyAttack = heavyAttack;
+        this.lightAttack = lightAttack;
+        this.combinedLightMagicAttack = combinedLightMagicAttack;
+        this.jumpAttack = jumpAttack;
+        return this;
     }
 
     public void getAttackMoveDamage(int heavyAttackDamage, int lightAttackDamage,
@@ -53,11 +56,4 @@ public class player_attack_move {
         }
     }
 
-    public void getPlayerAttackMove(player_attack_move heavyAttack, player_attack_move lightAttack,
-                                    player_attack_move jumpAttack, player_attack_move combinedLightMagicAttack) {
-        this.heavyAttack = heavyAttack;
-        this.lightAttack = lightAttack;
-        this.jumpAttack = jumpAttack;
-        this.combinedLightMagicAttack = combinedLightMagicAttack;
-    }
 }

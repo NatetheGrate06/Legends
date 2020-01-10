@@ -9,8 +9,8 @@ public class player_defense extends player_stat {
     public static int defenseLevel = filledDefenseSlot();
     public int health;
 
-    public static player_defense getPlayerDefense() {
-        return (player_defense) playerDefense;
+    public static int getPlayerDefense() {
+        return playerDefense;
     }
 
     public static int givePlayerHealth() {

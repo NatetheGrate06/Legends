@@ -10,8 +10,8 @@ public class player_magic extends player_stat {
     public static mana_bar mana;
     public static int magicLevel = filledMagicSlot();
 
-    public static player_magic getPlayerMagic() {
-        return (player_magic) playerMagic;
+    public static int getPlayerMagic() {
+        return playerMagic;
     }
 
     public static int filledMagicSlot() {
