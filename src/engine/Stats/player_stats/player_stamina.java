@@ -12,8 +12,8 @@ public class player_stamina extends player_stat {
     public static double staminaLost = (player.distanceRan * stamina_bar.staminaDepletion);
     public static double currentPlayerStamina = stamina - staminaLost;
 
-    public static player_stamina getPlayerStamina() {
-        return (player_stamina) playerStamina;
+    public static int getPlayerStamina() {
+        return playerStamina;
     }
 
     public static int getStaminaLevel() {
