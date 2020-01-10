@@ -27,7 +27,7 @@ public class notes {
     //nurse's jump magic is one of the monsters from the insane store giving her a boost
     //the swamp store clerk's jump ability is a pile of sandwiches and his light attack is shooting bombs or sandwiches and his heavy attack throws a potion and heals all nearby players by 200 points at max level
     //his maximate summons a giant pig pet and it swallows all nearby enemies
-    //remix some of the music from the first game into metal or drumstep
+    //remix some of the music from the first game into metal or drumstep. Add some dubstep for the golden and dragon recarnate.
 
     //Sound Team: John
     //Art Team: Set
