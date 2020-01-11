@@ -1,20 +1,35 @@
-package src.Controls;
+package Controls;
 
-public class block_controls extends AbstractAction {
+import javax.swing.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
-  Action playerBlock = new AbstractAction {
-    public void actionPreformed(ActionEvent e) {
-      
+public class block_controls extends JFrame {
+
+  public block_controls blockControls; {
+
+  int playerBlocking = KeyEvent.VK_CONTROL;
+
+  {
+
+    class BlockingKeyListener extends KeyAdapter {
+
+      @Override
+      public void keyPressed(KeyEvent e) {
+        Object source = e.getSource();
+        int action = e.getExtendedKeyCode();
+        super.keyPressed(e);
+      }
+
+      @Override
+      public void keyReleased(KeyEvent e) {
+        Object source = e.getSource();
+        int action = e.getExtendedKeyCode();
+        super.keyReleased(e);
+      }
     }
-  };
-  component.getInputMap().put(Keystroke.getKeyStroke("CTRL"), 
-                                                     "Blocking");
-  
-  public enum PlayerFaceDirection {
-    LEFT {
-    },
-    
-    RIGHT {
-    };
   }
 }
+}
+
+
