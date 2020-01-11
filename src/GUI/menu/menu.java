@@ -1,15 +1,22 @@
 package GUI.menu;
 
+import engine.Player.player;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class menu {
 
     private static final Dimension LOCAL_GAME_DIMENSION = new Dimension(50, 100);
     private final JFrame gameFrame;
     private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(600, 600);
+    public static String defaultImagesPath = "Art/menu_screen.jpg";
 
     public menu() {
         this.gameFrame = new JFrame("Castle Crashers 2");
@@ -62,4 +69,15 @@ public class menu {
         }
     }
 
+    private void assignMenuIcon(final menu menu) {
+        gameFrame.removeAll();
+        if(player.playerInMenu = true) {
+            try{
+                final BufferedImage image = ImageIO.read(new File(defaultImagesPath));
+                gameFrame.add(new JLabel(new ImageIcon(image)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
