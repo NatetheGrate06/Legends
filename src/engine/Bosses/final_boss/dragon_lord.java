@@ -52,21 +52,20 @@ public class j51whycopy extends MaxObject {
    }
    public void jit_matrix(String inname)
    {
-     //under normal circumstances 
-     //we would only create this matrix once
+     
      jm = new JitterMatrix();
      if (copy)
      {
         jm.frommatrix(inname);
      }
-     else //!copy
+     else 
      {
         jm = new JitterMatrix(inname);
      }
      zero(jm);
      outlet(0, "jit_matrix", jm.getName());
    }
-   //note that this method assumes the matrix is of type char
+  
    private void zero(JitterMatrix m)
    {
      int z[] = new int[m.getPlanecount()];
