@@ -18,6 +18,7 @@ public class menu {
         LocalGamePanel.localGamePanel = new LocalGamePanel();
         this.gameFrame.add(LocalGamePanel.localGamePanel, BorderLayout.CENTER);
         this.gameFrame.setVisible(true);
+
     }
 
     private JMenu createFileMenu() {
