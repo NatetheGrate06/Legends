@@ -6,7 +6,7 @@ import java.awt.event.KeyEvent;
 
 public class block_controls extends JFrame {
 
-  public block_controls blockControls; {
+  public static block_controls blockControls; {
 
   int playerBlocking = KeyEvent.VK_CONTROL;
 

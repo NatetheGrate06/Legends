@@ -69,15 +69,21 @@ public class menu {
         }
     }
 
+    public void drawMenu(final menu menu) {
+        assignMenuIcon(menu);
+        gameFrame.validate();
+        gameFrame.repaint();
+
+    }
+
     private void assignMenuIcon(final menu menu) {
         gameFrame.removeAll();
-        if(player.playerInMenu = true) {
             try{
                 final BufferedImage image = ImageIO.read(new File(defaultImagesPath));
                 gameFrame.add(new JLabel(new ImageIcon(image)));
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+
         }
     }
 }
