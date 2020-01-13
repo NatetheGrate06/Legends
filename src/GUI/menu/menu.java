@@ -47,7 +47,6 @@ public class menu {
     private static class LocalGamePanel extends JPanel {
 
         protected static JPanel localGamePanel;
-        //This is the constructor for the board that will be displayed on table
         LocalGamePanel() {
             super();
             setPreferredSize(LOCAL_GAME_DIMENSION);
@@ -60,5 +59,4 @@ public class menu {
             repaint();
         }
     }
-
 }
