@@ -28,6 +28,8 @@ public class notes {
     //the swamp store clerk's jump ability is a pile of sandwiches and his light attack is shooting bombs or sandwiches and his heavy attack throws a potion and heals all nearby players by 200 points at max level
     //his maximate summons a giant pig pet and it swallows all nearby enemies
     //remix some of the music from the first game into metal or drumstep. Add some dubstep for the golden and dragon recarnate.
+    //Make a pet encylopedia and a weapon encyclopedia. Make all pets from the original game. Make a new pet named larry that is only usable for the gold knight and the dragon recarnate. It multiplies all possitive weapon effects by 5 and gives +10 to all stats.5,000.It also gives 3 gold every 8 seconds. It is non upgradeable. Each pet has two tiers. The first tier is the begining but for 1,000 gold all pets except larry get to tier two, and then their effects are doubled. All knites have two teirs but for 5,000 gold. They get +3 to all of their stats and get a full screen magic, killing all the enemys in the area(which grows per tier 2 magic upgrade).
+    //Make a pet arena where the pet can get leveled(not tiered) up and grow. Make teirs look different from the orginal.
 
     //Sound Team: John
     //Art Team: Set
