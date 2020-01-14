@@ -79,7 +79,7 @@ public class menu {
     private void assignMenuIcon(final menu menu) {
         gameFrame.removeAll();
             try{
-                final BufferedImage image = ImageIO.read(new File(defaultImagesPath));
+                final BufferedImage image = ImageIO.read(new File("Art/menu_screen.jpg"));
                 gameFrame.add(new JLabel(new ImageIcon(image)));
             } catch (IOException e) {
                 e.printStackTrace();
