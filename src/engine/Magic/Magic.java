@@ -4,13 +4,18 @@ import engine.Characters.enemy_characters.enemy;
 import engine.Characters.playable_characters.Knights.knight;
 import engine.Player.player;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static engine.Characters.enemy_characters.enemy.enemyState.*;
+import static engine.Player.player.playerState.normalPlayerState;
 
 //TODO create secondary magic
 public class Magic {
 
     protected Magic(Magic magic, boolean isParalyzing, boolean isLingering, boolean isLeeching,
-                    boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
+                    boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile,
+                    boolean doesSummonEntity, boolean isBoosting) {
         this.getMagic();
         this.isParalyzingMagic();
         this.isLingeringMagic();
@@ -31,7 +36,8 @@ public class Magic {
 
     protected boolean isPlayerStateAltering() {
         if(isPlayerStateAltering()) {
-            player.playerState.playerCharacterState = player.playerState.alteredPlayerState;
+            //make this a list of what it equals
+            player.playerCharacterState.playerCharacterState.isNormalPlayerState = false;
         }
         return isPlayerStateAltering();
     }
@@ -80,4 +86,29 @@ public class Magic {
 
     protected void getMagic() {
     }
+
+    protected static class primary_magic {
+
+        protected primary_magic(primary_magic primaryMagic, boolean isParalyzing, boolean isLingering, boolean isLeeching,
+                                boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
+
+        }
+
+        public primary_magic primaryMagic;
+        public boolean isUsingPrimaryMagic; {
+
+        }
+    }
+
+    protected static class secondary_magic {
+
+        protected secondary_magic(secondary_magic secondaryMagic, boolean isParalyzing, boolean isLingering, boolean isLeeching,
+                                 boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
+
+        }
+
+        public static secondary_magic secondaryMagic;
+        public static boolean isUsingSecondaryMagic;
+    }
+
 }

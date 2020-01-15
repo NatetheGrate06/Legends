@@ -2,8 +2,9 @@ package engine.Stats.player_stats;
 
 import java.util.ArrayList;
 
-public abstract class player_stat {
+public class player_stat {
 
+    //TODO get stat level boosts cleaned up
     //TODO entire package needs to be cleaned up
     public static int playerAgility;
     public static int playerAttack;

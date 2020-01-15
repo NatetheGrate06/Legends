@@ -15,17 +15,8 @@ public class stamina_bar extends bar {
         return staminaCharge;
     }
 
-    public Function showStaminaBar() {
-        if (isPlayerInLevel(true)) {
-            return (Function) staminaBar;
-        }
-        return showBar();
-    }
-
     @Override
-    public Function showBar() {
-        return super.showBar();
+    public Function showBar(engine.Stats.stat_bars.bar bar) {
+        return super.showBar((engine.Stats.stat_bars.bar) staminaBar);
     }
-
-
 }

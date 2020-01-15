@@ -1,4 +1,4 @@
 package engine.Characters2.pets;
 
-public abstract class pet {
+public class pet {
 }

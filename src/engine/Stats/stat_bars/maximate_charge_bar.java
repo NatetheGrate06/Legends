@@ -33,10 +33,8 @@ public class maximate_charge_bar extends bar {
         return null;
     }
 
-    public Function showStaminaBar() {
-        if (isPlayerInLevel(true)) {
-            return (Function) maximateBar;
-        }
-        return showBar();
+    @Override
+    public Function showBar(engine.Stats.stat_bars.bar bar) {
+        return super.showBar((engine.Stats.stat_bars.bar) maximateBar);
     }
 }

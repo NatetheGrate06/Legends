@@ -11,6 +11,7 @@ public enum charge {
 
     CHARGE;
 
+    //TODO whole package needs cleanup
     public static double[] charge; {
         ArrayList<Double> charge = new ArrayList<>();
         charge.add(maximate_charge_bar.maximateCharge);

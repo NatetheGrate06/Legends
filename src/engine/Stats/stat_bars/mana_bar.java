@@ -9,13 +9,13 @@ import java.util.function.Function;
 
 public class mana_bar extends bar {
     public static double manaCharge = charge.chargeSpeed()[3];
+    //Takes 1/4 of your mana every time you use a primary magic attack or 1/5 magic per second using other magic
     public static double manaDepletion = charge.depletionSpeed()[4];
     public Object manaBar = new Dimension(50, 10);
 
-    public Function showManaBar(boolean b) {
-        if (player.isPlayerInLevel(true))
-        this.showManaBar(true);
-        return (Function) this.manaBar;
+    @Override
+    public Function showBar(engine.Stats.stat_bars.bar bar) {
+        return super.showBar((engine.Stats.stat_bars.bar) manaBar);
     }
 
     public mana_bar chargeMana() {

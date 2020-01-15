@@ -12,8 +12,9 @@ public class dragon_incarnate_ability_charge extends bar{
     public static double dragonDepletionSpeed = charge.depletionSpeed()[1];
     public Object dragonBar = new Dimension(50, 10);
 
-    public Function showDragonBar() {
-        return (Function) dragonBar;
+    @Override
+    public Function showBar(engine.Stats.stat_bars.bar bar) {
+        return super.showBar((engine.Stats.stat_bars.bar) dragonBar);
     }
 
     public static double dragonChargeBossCounter() {
@@ -22,7 +23,7 @@ public class dragon_incarnate_ability_charge extends bar{
 
     private Object main(String[] args) {
         if(dragon_incarnate.isDragonIncarnate = true) {
-            return this.showDragonBar();
+            return this.showBar((engine.Stats.stat_bars.bar) dragonBar);
         }
         return true;
     }

@@ -5,14 +5,14 @@ import engine.Player.player;
 import java.awt.*;
 import java.util.function.Function;
 
-public abstract class bar {
+public class bar {
 
     public static Object bar = new Dimension(50, 10);
 
-    public Function showBar() {
-        if (player.isPlayerInLevel(true)) {
-            return (Function) bar;
+    public Function showBar(bar bar) {
+        if (player.isPlayerInLevel = true) {
+            showBar(bar);
         }
-        return showBar();
+        return (Function) bar;
     }
 }

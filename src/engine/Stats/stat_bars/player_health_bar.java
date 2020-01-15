@@ -11,10 +11,8 @@ public class player_health_bar extends bar {
     public static double healthDepletion = charge.depletionSpeed()[4];
     protected Object healthBar = new Dimension(50, 10);
 
-    public Function showStaminaBar() {
-        if (isPlayerInLevel(true)) {
-            return (Function) healthBar;
-        }
-        return showBar();
+    @Override
+    public Function showBar(engine.Stats.stat_bars.bar bar) {
+        return super.showBar((engine.Stats.stat_bars.bar) healthBar);
     }
 }

@@ -15,7 +15,7 @@ public class menu {
 
     private static final Dimension LOCAL_GAME_DIMENSION = new Dimension(50, 100);
     private final JFrame gameFrame;
-    private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(600, 600);
+    private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(1920, 1080);
     public static String defaultImagesPath = "Art/menu_screen.jpg";
 
     public menu() {

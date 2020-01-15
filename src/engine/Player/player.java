@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import static engine.Stats.player_stats.player_stat.playerMagic;
 
-public abstract class player {
+public class player {
 
     public static boolean notifyPlayer;
     public static double distanceRan;
@@ -24,6 +24,8 @@ public abstract class player {
     public static playerState playerInGame;
     public static playerState playerInCutscene;
     public static playerState playerInCredits;
+    public static boolean isPlayerInLevel;
+    public static int damagePerHit;
 
     public static class playerState {
 
@@ -44,16 +46,25 @@ public abstract class player {
         }
 
         public static playerState normalPlayerState = playerInLevel;
-        public static player.playerState[] alteredPlayerState = !normalPlayerState;
+        public static player.playerState[] alteredPlayerState;
+        public static playerState playerInSpinningMagicAttack;
 
-        public static playerState[] playerCharacterState; {
-            ArrayList<playerState> playerCharacterState = new ArrayList<>();
-            playerCharacterState.add(normalPlayerState);
-        }
+
 
         public playerState isPlayerInLevel(boolean b) {
             return playerInLevel;
         }
     }
 
+    public static class playerCharacterState extends playerState {
+
+        public static playerCharacterState playerCharacterState;
+        public static boolean isNormalPlayerState;
+
+        {
+            ArrayList<player.playerState> playerCharacterState = new ArrayList<>();
+            playerCharacterState.add(normalPlayerState);
+            playerCharacterState.add(playerInSpinningMagicAttack);
+        }
+    }
 }
