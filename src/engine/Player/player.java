@@ -26,6 +26,8 @@ public class player {
     public static playerState playerInCredits;
     public static boolean isPlayerInLevel;
     public static int damagePerHit;
+    public static boolean canPlayerUse;
+    public static String notUnlockedError = "You have reached a high enough level to use this power...";
 
     public static class playerState {
 
