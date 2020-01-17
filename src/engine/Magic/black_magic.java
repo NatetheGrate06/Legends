@@ -62,7 +62,7 @@ public class black_magic extends Magic {
     protected static class black_maximate extends maximate {
 
         protected black_maximate(engine.Magic.maximate maximate, int getRecharge, int getRadius) {
-            //needs 25 kills to recharge and has a 5 enemy kill radius
+            //needs kills to recharge and has an enemy kill radius
             super(blackMaximate, 20 / magicLevelBoost, 7);
         }
 
