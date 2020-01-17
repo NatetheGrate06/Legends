@@ -62,8 +62,7 @@ public class air_magic extends Magic {
 
         public static air_secondary_jump_magic airSecondaryJumpMagic;
     }
-
-    //TODO air maximate sweeps up nearby enemies, brings them up into the lower atmosphere, and drops them dow
+    //TODO air maximate sweeps up nearby enemies, brings them up into the lower atmosphere, and drops them down
     protected static class air_maximate extends maximate {
 
         protected air_maximate(engine.Magic.maximate maximate, int getRecharge, int getRadius) {
