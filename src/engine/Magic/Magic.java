@@ -110,7 +110,8 @@ public class Magic {
     protected static class secondary_magic {
 
         protected secondary_magic(secondary_magic secondaryMagic, boolean isParalyzing, boolean isLingering, boolean isLeeching,
-                                 boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
+                                 boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile,
+                                 boolean doesSummonEntity, boolean isBoosting) {
 
         }
 

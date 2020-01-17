@@ -35,7 +35,7 @@ public class black_magic extends Magic {
     protected static class secondary_black_magic extends secondary_magic {
 
         protected secondary_black_magic(secondary_magic secondaryMagic, boolean isParalyzing, boolean isLingering, boolean isLeeching, boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
-            super(secondaryBlackMagic, false, true, false, false, false, true, false);
+            super(secondaryBlackMagic, false, true, false, false, false, true, false, false);
         }
 
         public static secondary_black_magic secondaryBlackMagic;

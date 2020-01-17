@@ -38,7 +38,7 @@ public class air_magic extends Magic {
     protected static class secondary_air_magic extends secondary_magic {
 
         protected secondary_air_magic(secondary_magic secondaryMagic, boolean isParalyzing, boolean isLingering, boolean isLeeching, boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
-            super(secondaryAirMagic, false, false, false, false, false, true, false);
+            super(secondaryAirMagic, false, false, false, false, false, true, false, false);
         }
 
         public static secondary_air_magic secondaryAirMagic;

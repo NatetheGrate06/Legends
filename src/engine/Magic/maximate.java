@@ -1,7 +1,5 @@
 package engine.Magic;
 
-import static engine.Stats.stat_bars.maximate_charge_bar.maximateCharge;
-
 public class maximate {
 
     //maximates don't affect bosses
@@ -12,7 +10,7 @@ public class maximate {
     public static maximate maximateDefenseBoost;
     public static maximate maximateAgilityBoost;
 
-    protected maximate(maximate maximate, int getRecharge, int getRadius) {
+    protected maximate(maximate maximate, int getRecharge, Integer getRadius) {
         this.getMaximate();
         this.getMaximateRecharge();
         this.getMaximateRadius();

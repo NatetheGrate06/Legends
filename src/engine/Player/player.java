@@ -1,11 +1,7 @@
 package engine.Player;
 
-import engine.Stats.player_stats.player_stat;
-
-import javax.swing.*;
 import java.util.ArrayList;
-
-import static engine.Stats.player_stats.player_stat.playerMagic;
+import static engine.Stats.player_stats.player_magic.magicLevelBoost;
 
 public class player {
 
@@ -28,6 +24,9 @@ public class player {
     public static int damagePerHit;
     public static boolean canPlayerUse;
     public static String notUnlockedError = "You have reached a high enough level to use this power...";
+    public static int healPlayer;
+    public static int numOfHits;
+    public static int healPlayerFromLeech = (int) Math.round(2.5 * magicLevelBoost);
 
     public static class playerState {
 

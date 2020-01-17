@@ -34,7 +34,7 @@ public class battleaxe_magic extends Magic {
     protected static class secondary_battleaxe_magic extends secondary_magic {
 
         protected secondary_battleaxe_magic(secondary_magic secondaryMagic, boolean isParalyzing, boolean isLingering, boolean isLeeching, boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity) {
-            super(secondaryBattleaxeMagic, false, false, false, false, false, true, false);
+            super(secondaryBattleaxeMagic, false, false, false, false, false, true, false, false);
         }
 
         public static secondary_battleaxe_magic secondaryBattleaxeMagic;
