@@ -1,5 +1,7 @@
 package engine.Magic;
 
+import engine.Characters.playable_characters.Knights.PinkKnight
+
 public class rainbow_magic extends Magic {
 
     //TODO rainbow maximate summons pink creatures underneath the enemies and the creatures swallow them, but in a funny way

@@ -1,5 +1,4 @@
 package engine.Magic;
-
 import engine.Player.player;
 import engine.Player.player_level;
 import engine.Stats.stat_bars.mana_bar;
