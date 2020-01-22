@@ -1,6 +1,6 @@
 package engine.Stats.player_stats;
 
-import engine.Magic.maximate;
+import engine.Maximates.maximate;
 import engine.Player.level_up_points;
 
 import static engine.Stats.stat_bars.maximate_charge_bar.maximateCharge;

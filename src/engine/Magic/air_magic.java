@@ -1,9 +1,7 @@
 package engine.Magic;
+import engine.Maximates.maximate;
 import engine.Player.player;
-import engine.Player.player_level;
-import engine.Stats.stat_bars.mana_bar;
 
-import static engine.Player.player.playerState.normalPlayerState;
 import static engine.Player.player_level.playerLevelBoost;
 import static engine.Stats.player_stats.player_magic.magicLevel;
 import static engine.Stats.player_stats.player_magic.magicLevelBoost;
@@ -64,7 +62,7 @@ public class air_magic extends Magic {
     //TODO air maximate sweeps up nearby enemies, brings them up into the lower atmosphere, and drops them down
     protected static class air_maximate extends maximate {
 
-        protected air_maximate(engine.Magic.maximate maximate, int getRecharge, int getRadius) {
+        protected air_maximate(engine.Maximates.maximate maximate, int getRecharge, int getRadius) {
             //needs 25 kills to recharge and has a 5 enemy kill radius
             super(airMaximate, 25 / magicLevelBoost, 5);
         }

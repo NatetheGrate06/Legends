@@ -3,11 +3,10 @@ package engine.Stats.stat_bars;
 import engine.Player.player;
 import engine.Stats.player_stats.player_magic;
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.function.Function;
 
-import static engine.Magic.maximate.maximateManaBoost;
+import static engine.Maximates.maximate.maximateManaBoost;
 
 public class mana_bar extends bar {
     public static double manaCharge = charge.chargeSpeed()[3];

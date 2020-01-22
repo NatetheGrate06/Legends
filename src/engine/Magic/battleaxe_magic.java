@@ -1,7 +1,7 @@
 package engine.Magic;
 
+import engine.Maximates.maximate;
 import engine.Player.player;
-import engine.Player.player_level;
 
 import static engine.Player.player_level.playerLevelBoost;
 import static engine.Stats.player_stats.player_magic.magicLevel;
@@ -60,7 +60,7 @@ public class battleaxe_magic extends Magic {
 
     protected static class battleaxe_maximate extends maximate {
 
-        protected battleaxe_maximate(engine.Magic.maximate maximate, int getRecharge, int getRadius) {
+        protected battleaxe_maximate(engine.Maximates.maximate maximate, int getRecharge, int getRadius) {
             //needs 25 kills to recharge and has a 5 enemy kill radius
             super(battleaxeMaximate, 25 / magicLevelBoost, 5);
         }

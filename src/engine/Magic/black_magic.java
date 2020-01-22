@@ -1,5 +1,6 @@
 package engine.Magic;
 
+import engine.Maximates.maximate;
 import engine.Player.player;
 
 import static engine.Player.player_level.playerLevelBoost;
@@ -61,7 +62,7 @@ public class black_magic extends Magic {
 
     protected static class black_maximate extends maximate {
 
-        protected black_maximate(engine.Magic.maximate maximate, int getRecharge, int getRadius) {
+        protected black_maximate(engine.Maximates.maximate maximate, int getRecharge, int getRadius) {
             //needs kills to recharge and has an enemy kill radius
             super(blackMaximate, 20 / magicLevelBoost, 7);
         }

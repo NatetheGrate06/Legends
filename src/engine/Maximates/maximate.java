@@ -1,4 +1,4 @@
-package engine.Magic;
+package engine.Maximates;
 
 public class maximate {
 
