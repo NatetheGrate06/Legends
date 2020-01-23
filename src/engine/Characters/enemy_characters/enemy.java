@@ -1,8 +1,17 @@
 package engine.Characters.enemy_characters;
 
+import Game_Levels.game_level;
+import engine.Characters2.pets.pet;
+import engine.Items.weapons.weapon;
+import engine.Magic.Magic;
+
 import java.util.ArrayList;
 
 public class enemy {
+
+    //TODO put the constructor in the child classes
+    protected enemy(game_level getGameLevel, enemy getEnemy, weapon getEnemyWeapon, Magic getMagic,
+                    pet getPet, Boolean isBeefy, Boolean hasPet) {}
 
     public boolean isEnemyAttacking;
     public enemy enemy;
@@ -11,11 +20,8 @@ public class enemy {
         return this;
     }
 
-    public static class enemyState extends enemy {
+    public static class enemyState {
 
-        enemyState() {
-
-        }
 
         public static enemyState currentEnemyState;
 
@@ -51,7 +57,7 @@ public class enemy {
         }
 
         public static boolean canEnemyMove(boolean b) {
-            return canEnemyMove(false);
+            return canEnemyMove(b);
         }
 
 

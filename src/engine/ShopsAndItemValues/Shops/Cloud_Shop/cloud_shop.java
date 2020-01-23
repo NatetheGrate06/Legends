@@ -1,4 +1,8 @@
 package engine.ShopsAndItemValues.Shops.Cloud_Shop;
 
-public class cloud_shop {
+import engine.ShopsAndItemValues.Shops.shop;
+
+public class cloud_shop extends shop {
+
+    public static shop cloudShop;
 }

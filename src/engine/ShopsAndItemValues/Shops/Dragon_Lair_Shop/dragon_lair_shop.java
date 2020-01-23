@@ -1,4 +1,8 @@
 package engine.ShopsAndItemValues.Shops.Dragon_Lair_Shop;
 
-public class dragon_lair_shop {
+import engine.ShopsAndItemValues.Shops.shop;
+
+public class dragon_lair_shop extends shop {
+
+    public static shop dragonLairShop;
 }

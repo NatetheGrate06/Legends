@@ -1,4 +1,8 @@
 package engine.ShopsAndItemValues.Shops.Snow_Shop;
 
-public class snow_shop {
+import engine.ShopsAndItemValues.Shops.shop;
+
+public class snow_shop extends shop {
+
+    public static shop snowShop;
 }

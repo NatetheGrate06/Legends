@@ -6,6 +6,6 @@ import engine.unlocking_variables;
 public class wizard extends enemy_character {
 
     wizard(unlocking_variables unlockingVariable) {
-        super(approaching_evil_DLC.unlockingApproachingEvil);
+        super(approaching_evil_DLC.unlockingApproachingEvil );
     }
 }
