@@ -32,6 +32,11 @@ public class Magic {
         this.doesShootProjectile();
         this.doesSummonEntity();
     }
+    //TODO finish array list and add one for secondary and jump magics
+    public static Magic magics; {
+        ArrayList<Magic> magics = new ArrayList<>();
+        magics.add(air_magic.airMagic);
+    }
 
     public boolean doesSummonEntity() {
         return doesSummonEntity();
