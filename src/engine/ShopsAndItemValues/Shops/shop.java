@@ -12,10 +12,10 @@ import engine.ShopsAndItemValues.Shops.Swamp_Shop.swamp_shop;
 
 import java.util.ArrayList;
 
-public class shop extends game_level {
+public class shop {
 
     //TODO more shops to create i think
-    public static shop shops; {
+    public static game_level shops; {
         ArrayList<shop> shops = new ArrayList<>();
         shops.add(cloud_shop.cloudShop);
         shops.add(castle_shop.castleShop);

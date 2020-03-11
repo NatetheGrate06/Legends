@@ -4,7 +4,7 @@ public class shop_item {
 
     public static shop_item shopItem;
 
-    protected final void getShopItems() {
+    public static final void getShopItems() {
         boolean hasPets;
         boolean hasWeapons;
         boolean hasPotions;
