@@ -68,4 +68,8 @@ public class player {
             playerCharacterState.add(playerInSpinningMagicAttack);
         }
     }
+
+    public class beefy_player {
+        public beefy_player beefyPlayer;
+    }
 }

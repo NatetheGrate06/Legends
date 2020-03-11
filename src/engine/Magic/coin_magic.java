@@ -4,6 +4,8 @@ package engine.Magic;
 public class coin_magic extends Magic {
 
     protected coin_magic(Magic magic, boolean isParalyzing, boolean isLingering, boolean isLeeching, boolean isEnemyManipulating, boolean isPlayerStateAltering, boolean doesShootProjectile, boolean doesSummonEntity, boolean isBoosting) {
-        super(magic, isParalyzing, isLingering, isLeeching, isEnemyManipulating, isPlayerStateAltering, doesShootProjectile, doesSummonEntity, isBoosting);
+        super(coinMagic);
     }
+
+    public static coin_magic coinMagic;
 }

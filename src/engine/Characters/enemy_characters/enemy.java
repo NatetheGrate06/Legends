@@ -14,7 +14,7 @@ public class enemy {
                     pet getPet, Boolean isBeefy, Boolean hasPet) {}
 
     public boolean isEnemyAttacking;
-    public enemy enemy;
+    public static enemy enemy;
 
     public enemy isEnemy() {
         return this;
@@ -61,5 +61,10 @@ public class enemy {
         }
 
 
+    }
+
+    public static class beefy_enemy {
+
+        public static beefy_enemy beefyEnemy;
     }
 }

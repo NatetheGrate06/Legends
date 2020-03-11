@@ -8,8 +8,4 @@ public class alien_sword extends weapon {
     public alien_sword alienSword;
 
 
-    @Override
-    public void getWeaponLevelRequirement(int i) {
-        this.getWeaponLevelRequirement(1);
-    }
 }

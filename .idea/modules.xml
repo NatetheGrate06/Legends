@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Art/Art.iml" filepath="$PROJECT_DIR$/Art/Art.iml" />
       <module fileurl="file://$PROJECT_DIR$/DLC/DLC.iml" filepath="$PROJECT_DIR$/DLC/DLC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Insane Mode/Insane Mode.iml" filepath="$PROJECT_DIR$/Insane Mode/Insane Mode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Legends.iml" filepath="$PROJECT_DIR$/Legends.iml" />

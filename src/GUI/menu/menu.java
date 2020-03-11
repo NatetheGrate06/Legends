@@ -1,22 +1,26 @@
 package GUI.menu;
 
 import engine.Player.player;
+import javafx.scene.image.Image;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
+import java.awt.event.KeyEvent;
+import java.awt.image.*;
 import java.io.File;
 import java.io.IOException;
 
 public class menu {
 
     private static final Dimension LOCAL_GAME_DIMENSION = new Dimension(50, 100);
-    private final JFrame gameFrame;
+    public static JFrame gameFrame;
+    public static JFrame menu;
     private final static Dimension OUTER_FRAME_DIMENSION = new Dimension(1920, 1080);
     public static String defaultImagesPath = "Art/menu_screen.jpg";
+    public static Image menuImage = new Image("https://steamuserimages-a.akamaihd.net/ugc/922555190803549215/3D1AAD17ADC49225DEA04BCFD95EAABDD29A9192/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
 
     public menu() {
         this.gameFrame = new JFrame("Castle Crashers 2");
@@ -25,10 +29,23 @@ public class menu {
         LocalGamePanel.localGamePanel = new LocalGamePanel();
         this.gameFrame.add(LocalGamePanel.localGamePanel, BorderLayout.CENTER);
         this.gameFrame.setVisible(true);
-
     }
 
-    private JMenu createFileMenu() {
+    public static void openMenu() {
+        gameFrame.setSize(OUTER_FRAME_DIMENSION);
+        gameFrame.setPreferredSize(OUTER_FRAME_DIMENSION);
+        gameFrame.setMaximumSize(OUTER_FRAME_DIMENSION);
+        gameFrame.setMinimumSize(OUTER_FRAME_DIMENSION);
+        //set the quit button as the default close op
+        gameFrame.setVisible(true);
+        createFileMenu();
+        drawMenu();
+        gameFrame.add(menu, BorderLayout.CENTER);
+        gameFrame.setLocationRelativeTo(null);
+        gameFrame.setResizable(false);
+    }
+
+    private static JMenu createFileMenu() {
         final JMenu fileMenu = new JMenu("File");
         final JMenuItem openPGN = new JMenuItem("Load PGN File");
         openPGN.addActionListener(new ActionListener() {
@@ -69,14 +86,14 @@ public class menu {
         }
     }
 
-    public void drawMenu(final menu menu) {
-        assignMenuIcon(menu);
+    public static void drawMenu() {
+        assignMenuIcon();
         gameFrame.validate();
         gameFrame.repaint();
 
     }
 
-    private void assignMenuIcon(final menu menu) {
+    private static void assignMenuIcon() {
         gameFrame.removeAll();
             try{
                 final BufferedImage image = ImageIO.read(new File("Art/menu_screen.jpg"));
@@ -85,5 +102,13 @@ public class menu {
                 e.printStackTrace();
 
         }
+    }
+
+    public class local_Game_Option extends menu {
+
+        public JButton localGameOption = new JButton("local game"); {
+            localGameOption.setMnemonic(KeyEvent.VK_ENTER);
+        }
+
     }
 }
