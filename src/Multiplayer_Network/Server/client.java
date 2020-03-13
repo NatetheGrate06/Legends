@@ -1,4 +1,6 @@
-package Network.Server;
+package Multiplayer_Network.Server;
+
+import Multiplayer_Network.packets.RemovePlayerPacket;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -6,7 +8,6 @@ import java.io.ObjectOutputStream;
 import java.net.ConnectException;
 import java.net.Socket;
 import java.net.SocketException;
-import java.net.UnknownHostException;
 
 public class client implements Runnable {
 
@@ -22,7 +23,6 @@ public class client implements Runnable {
     public client(String host, int port) {
         this.host = host;
         this.port = port;
-
     }
 
     //connect to server
@@ -31,6 +31,7 @@ public class client implements Runnable {
             socket = new Socket(host, port);
             out = new ObjectOutputStream(socket.getOutputStream());
             in = new ObjectInputStream(socket.getInputStream());
+            listener = new event_listener();
             new Thread(this).start();
         } catch (ConnectException e) {
             System.out.println("Unable to connect to the server...");
@@ -43,7 +44,8 @@ public class client implements Runnable {
     public void close() {
         try {
             serverRunning = false;
-            //TODO tell the server about the disconnection
+            RemovePlayerPacket packet = new RemovePlayerPacket();
+            sendObject(packet);
             in.close();
             out.close();
             socket.close();
@@ -53,9 +55,9 @@ public class client implements Runnable {
     }
 
     //sends data to the server
-    public void sendObject(Object pac) {
+    public void sendObject(Object packet) {
         try {
-            out.writeObject(pac);
+            out.writeObject(packet);
         } catch(IOException e) {
             e.printStackTrace();
         }
@@ -69,6 +71,7 @@ public class client implements Runnable {
             while(serverRunning) {
                 try {
                     Object data = in.readObject();
+                    listener.received(data);
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();
                 } catch (SocketException e) {
